@@ -1,5 +1,5 @@
-# rrps
-Made to help with running Warwick Anime Society's Kaiji simulation. Made with timer.js.
+# Restricted Rock-Paper-Scissors
+A quick project made to help with running Warwick Anime Society's Kaiji simulation. Made with timer.js and Bulma.
 
 ## Usage
 Download full repository and simply open the HTML file in a browser. Works out of the box.
