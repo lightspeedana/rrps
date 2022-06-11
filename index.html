@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -95,6 +96,9 @@
                 if (document.getElementById("players").innerHTML == "1") {
                     document.getElementById("grammar").innerHTML = "PLAYER";
                 }
+                else {
+                    document.getElementById("grammar").innerHTML = "PLAYERS";
+                }
             }
         }
         else if (event.keyCode == 187 || event.key == "=" || event.code == "Equal") {
@@ -111,6 +115,9 @@
                 element.appendChild(tag);
                 if (document.getElementById("players").innerHTML == "1") {
                     document.getElementById("grammar").innerHTML = "PLAYER";
+                }
+                else {
+                    document.getElementById("grammar").innerHTML = "PLAYERS";
                 }
         }
     }
