@@ -39,7 +39,7 @@
                                 </div>
                             </div>
                             <p id="players" class="title is-size-1">0</p>
-                            <p class="subtitle is-size-3">PLAYERS</p>
+                            <p id="grammar" class="subtitle is-size-3">PLAYERS</p>
                             <br>
                             <div id="playerButtons">
 
@@ -92,6 +92,9 @@
                 var parent = document.getElementById("playerButtons");
                 var child = document.getElementById("p"+poppedPlayerNum);
                 parent.removeChild(child);
+                if (document.getElementById("players").innerHTML == "1") {
+                    document.getElementById("grammar").innerHTML = "PLAYER";
+                }
             }
         }
         else if (event.keyCode == 187 || event.key == "=" || event.code == "Equal") {
@@ -106,6 +109,9 @@
                 tag.appendChild(text);
                 var element = document.getElementById("playerButtons");
                 element.appendChild(tag);
+                if (document.getElementById("players").innerHTML == "1") {
+                    document.getElementById("grammar").innerHTML = "PLAYER";
+                }
         }
     }
 </script>
